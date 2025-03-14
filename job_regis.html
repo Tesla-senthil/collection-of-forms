@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <br><small>Format: 10-digit number</small>
+        <br><br>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        <br><small>(Accepted formats: .pdf, .doc, .docx)</small>
+        <br><br>
+        <label for="cover_letter">Cover Letter:</label>
+        <textarea id="cover_letter" name="cover_letter" rows="5" required></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
